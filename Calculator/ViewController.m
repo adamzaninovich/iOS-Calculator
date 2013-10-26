@@ -29,8 +29,10 @@
   if (method == 5) {
     [self clear];
   }
-  selectNumber = (selectNumber * 10) + number;
-  [self setScreenWithInt:selectNumber];
+  if (selectNumber/100000.0 <= 1.0) { // limit to 6 digits
+    selectNumber = (selectNumber * 10) + number;
+    [self setScreenWithInt:selectNumber];
+  }
 }
 
 - (void)compute {
