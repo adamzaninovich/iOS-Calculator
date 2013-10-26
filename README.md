@@ -2,7 +2,7 @@
 
 ### A calculator app for iPhone
 
-![screenshot](http://i.imgur.com/05OeNNi.png)
+![screenshot](http://i.imgur.com/YRShTRq.png)
 
 ## Issues
 
