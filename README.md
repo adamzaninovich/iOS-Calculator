@@ -6,9 +6,8 @@
 
 ## Issues
 
-* Has a bug that crashes when pressing =
+* No known issues
 
 ## Todo
 
-* Fix crash on `compute`
 * Write tests
