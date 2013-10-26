@@ -16,7 +16,6 @@ float runningTotal;
   IBOutlet UILabel *screen;
 }
 
-- (IBAction)n0:(id)sender;
 - (IBAction)n1:(id)sender;
 - (IBAction)n2:(id)sender;
 - (IBAction)n3:(id)sender;
@@ -26,6 +25,7 @@ float runningTotal;
 - (IBAction)n7:(id)sender;
 - (IBAction)n8:(id)sender;
 - (IBAction)n9:(id)sender;
+- (IBAction)n0:(id)sender;
 
 - (IBAction)divide:(id)sender;
 - (IBAction)multiply:(id)sender;

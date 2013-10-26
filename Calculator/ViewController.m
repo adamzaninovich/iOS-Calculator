@@ -26,6 +26,9 @@
 }
 
 - (void)pushNumber:(int)number {
+  if (method == 5) {
+    [self clear];
+  }
   selectNumber = (selectNumber * 10) + number;
   [self setScreenWithInt:selectNumber];
 }
@@ -60,7 +63,13 @@
   [self setScreenWithFloat:runningTotal];
 }
 
-- (IBAction)n0:(id)sender { [self pushNumber:0]; }
+- (void)clear {
+  method = 0;
+  runningTotal = 0;
+  selectNumber = 0;
+  [self setScreenWithInt:0];
+}
+
 - (IBAction)n1:(id)sender { [self pushNumber:1]; }
 - (IBAction)n2:(id)sender { [self pushNumber:2]; }
 - (IBAction)n3:(id)sender { [self pushNumber:3]; }
@@ -70,18 +79,16 @@
 - (IBAction)n7:(id)sender { [self pushNumber:7]; }
 - (IBAction)n8:(id)sender { [self pushNumber:8]; }
 - (IBAction)n9:(id)sender { [self pushNumber:9]; }
+- (IBAction)n0:(id)sender { [self pushNumber:0]; }
 
 - (IBAction)divide:(id)sender   { [self performOperation:1]; }
 - (IBAction)multiply:(id)sender { [self performOperation:2]; }
 - (IBAction)subtract:(id)sender { [self performOperation:3]; }
 - (IBAction)add:(id)sender      { [self performOperation:4]; }
-- (IBAction)equal:(id)sender    { [self performOperation:0]; }
+- (IBAction)equal:(id)sender    { [self performOperation:5]; }
 
 - (IBAction)clear:(id)sender {
-  method = 0;
-  runningTotal = 0;
-  selectNumber = 0;
-  [self setScreenWithInt:0];
+  [self clear];
 }
 
 @end

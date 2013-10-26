@@ -158,14 +158,15 @@
                                     <action selector="n0:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1HT-rK-BNS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsg-kp-FKW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y14-cl-IAS">
                                 <rect key="frame" x="162" y="443" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="="/>
+                                <state key="normal" title="=">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="compute:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QGF-8A-amU"/>
-                                    <action selector="equal:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gfm-Bb-Xru"/>
+                                    <action selector="equal:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eM1-v5-VYm"/>
                                 </connections>
                             </button>
                         </subviews>
