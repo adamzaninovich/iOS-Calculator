@@ -1,6 +1,12 @@
-iOS-Calculator
-==============
+# iOS Calculator
 
-iOS Calculator
+### A calculator app for iPhone
 
-Has a bug that crashes when pressing =
+## Issues
+
+* Has a bug that crashes when pressing =
+
+## Todo
+
+* Fix crash on `compute`
+* Write tests
